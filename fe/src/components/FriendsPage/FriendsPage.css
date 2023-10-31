@@ -1,0 +1,13 @@
+.friends-container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 50px;
+  width: 1500px;
+  padding-bottom: 30px;
+  background: #9dc08b;
+  border-radius: 64px;
+}
+h1 {
+  color: white;
+}

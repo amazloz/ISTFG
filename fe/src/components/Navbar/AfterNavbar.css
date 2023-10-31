@@ -1,0 +1,10 @@
+.afternav {
+  font-family: Poppins;
+  display: flex;
+}
+.afternav .afterul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 690px;
+}

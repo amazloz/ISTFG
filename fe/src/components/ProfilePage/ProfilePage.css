@@ -1,0 +1,74 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  width: 1500px;
+  padding-bottom: 30px;
+  background: #9dc08b;
+  border-radius: 64px;
+}
+.avatar {
+  padding-top: 20px;
+}
+.avatar img {
+  height: 250px;
+  width: auto;
+  border-radius: 32px;
+}
+.language-interest-container {
+  background: #edf1d6;
+  border-radius: 24px;
+  width: 800px;
+  margin: 5px;
+  align-self: center;
+  display: flex;
+  padding: 15px;
+}
+.add {
+  border-radius: 24px;
+  background-color: #9dc08b;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 3px;
+  width: 150px;
+}
+.last {
+  border-radius: 24px;
+  background-color: #edf1d6;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 15px;
+  width: 150px;
+}
+p {
+  padding-left: 20px;
+}
+.info-container {
+  background: #edf1d6;
+  align-self: center;
+  border-radius: 24px;
+  width: 800px;
+  padding: 15px;
+  margin: 5px;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+.first-info {
+  display: flex;
+  justify-content: space-between;
+}
+.other-info {
+  display: flex;
+  justify-content: space-between;
+}
+.lastname {
+  padding-right: 137px;
+}

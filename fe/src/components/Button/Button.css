@@ -1,0 +1,12 @@
+.gr {
+  cursor: pointer;
+  border-radius: 180px;
+  background: #40513b;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 4px 30px 4px 30px;
+  font-family: 'Poppins';
+  font-size: 20px;
+}

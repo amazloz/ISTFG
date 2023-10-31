@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #609966;
+}
+.one {
+  height: 100vh;
+  background-color: #609966;
+}
+.two {
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  justify-content: center;
+}
+.three {
+  height: 100vh;
+  background-color: #609966;
+}
+.four {
+  height: 100vh;
+  background-color: white;
+}
+.five {
+  height: 100vh;
+  background-color: #609966;
+  padding-top: 250px;
+  padding-left: 250px;
+  display: flex;
+}
+.one .containerbox {
+  padding-top: 170px;
+  display: flex;
+  justify-content: center;
+}
+.one .title {
+  display: grid;
+  height: 300px;
+  width: 500px;
+  text-align: left;
+}
+.one .title h1 {
+  color: white;
+  font-family: "Poppins";
+  font-size: 48px;
+}
+
+.one .title p {
+  color: white;
+  font-family: "Poppins";
+  font-size: 32px;
+}
+
+.two .intro {
+  padding-top: 80px;
+}
+.two .title {
+  display: flex;
+  justify-content: center;
+}
+.two h1 {
+  color: #40513b;
+  font-family: "Poppins";
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.two p {
+  color: #40513b;
+  font-family: "Poppins";
+  font-size: 24px;
+}
+
+.two .title p {
+  padding-left: 80px;
+}
+
+.nostyle {
+  cursor: pointer;
+  background: white;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+
+.sign {
+  font-size: 32px;
+}
+.contact-container {
+  height: 500px;
+  width: 1500px;
+  background: #9dc08b;
+  border-radius: 64px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.five .contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+.five .contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  text-align: left;
+}
+.five .contact-form .form-one {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.five .contact-form .form-one .name {
+  width: 250px;
+}
+.five .contact-form .form-one .email {
+  width: 250px;
+  height: 30px;
+  padding: 3px;
+}
+.message {
+  margin-top: 30px;
+  width: 594px;
+}
+.five h1 {
+  color: #40513b;
+}
+.five p {
+  color: #40513b;
+}
+
+.submit-form {
+  border-radius: 24px;
+  background-color: #edf1d6;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #40513b;
+  margin-top: 30px;
+  padding: 15px;
+  width: 150px;
+}
