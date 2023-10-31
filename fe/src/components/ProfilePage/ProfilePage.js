@@ -12,13 +12,13 @@ const ProfilePage = () => {
           <img src={profilepic} alt="avatar" />
         </div>
         <div className="language-interest-container">
-          <button className="add">+ Add Language</button>
+          <button className="add">+ Add Languages</button>
           <p>Mongolia(5),</p>
           <p>English(3),</p>
           <p>Korean(1)</p>
         </div>
         <div className="language-interest-container">
-          <button className="add">+ Add Interest</button>
+          <button className="add">+ Add Interests</button>
           <p>Coffee,</p>
           <p>Skateboard,</p>
           <p>Photography</p>
