@@ -10,7 +10,7 @@ const AfterNavbar = () => {
       </a>
       <ul className="afterul">
         <li>
-          <a href="MainPage">Match</a>
+          <a href="MatchPage">Match</a>
         </li>
         <li>
           <a href="ProfilePage">Profile</a>

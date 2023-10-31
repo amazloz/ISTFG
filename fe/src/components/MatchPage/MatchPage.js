@@ -1,6 +1,6 @@
 import React from "react";
 import AfterNavbar from "../Navbar/AfterNavbar";
-import "./MainPage.css";
+import "./MatchPage.css";
 
 const MainPage = () => {
   return (

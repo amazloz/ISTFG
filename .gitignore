@@ -1,3 +1,13 @@
 fe/node_modules/
+fe/node_modules/.cache
 fe/node_modules/.cache/.eslintcache
+fe/node_modules/.cache/default-development/5.pack
+fe/node_modules/.cache/default-development/8.pack
+fe/node_modules/.cache/default-development/10.pack
+fe/node_modules/.cache/default-development/11.pack
+fe/node_modules/.cache/default-development/12.pack
+fe/node_modules/.cache/default-development/17.pack
+fe/node_modules/.cache/default-development/index.pack
+fe/node_modules/.cache/default-development/index.pack.old
 *.pack
+*.old
