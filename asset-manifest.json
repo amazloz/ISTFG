@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ISTFG/static/css/main.7eef3bc3.css",
+    "main.js": "/ISTFG/static/js/main.a8a9fc67.js",
+    "static/js/787.7066aac0.chunk.js": "/ISTFG/static/js/787.7066aac0.chunk.js",
+    "static/media/maincombined.png": "/ISTFG/static/media/maincombined.aa831960b3f4f15c0377.png",
+    "static/media/profilepic.jpg": "/ISTFG/static/media/profilepic.8548f4a55407cd3a453d.jpg",
+    "static/media/main.jpeg": "/ISTFG/static/media/main.2b58e45e8174c060a6db.jpeg",
+    "static/media/videocall.jpeg": "/ISTFG/static/media/videocall.dca3d6894ce5e3f2b479.jpeg",
+    "static/media/mainmini.jpeg": "/ISTFG/static/media/mainmini.e03ef7b997d7670d04bf.jpeg",
+    "index.html": "/ISTFG/index.html",
+    "main.7eef3bc3.css.map": "/ISTFG/static/css/main.7eef3bc3.css.map",
+    "main.a8a9fc67.js.map": "/ISTFG/static/js/main.a8a9fc67.js.map",
+    "787.7066aac0.chunk.js.map": "/ISTFG/static/js/787.7066aac0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eef3bc3.css",
+    "static/js/main.a8a9fc67.js"
+  ]
+}
