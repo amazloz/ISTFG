@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import IntroductionPage from "./components/IntroductionPage/IntroductionPage";
 import LoginPage from "./components/LoginPage/LoginPage";
+import SignupPage from "./components/SignupPage/SignupPage";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import MatchPage from "./components/MatchPage/MatchPage";
 import RoomPage from "./components/RoomPage/RoomPage";
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<IntroductionPage />} />
             <Route path="/LoginPage" element={<LoginPage />} />
+            <Route path="/SignupPage" element={<SignupPage />} />
             <Route path="/MatchPage" element={<MatchPage />} />
             <Route path="/ProfilePage" element={<ProfilePage />} />
             <Route path="/FriendsPage" element={<FriendsPage />} />

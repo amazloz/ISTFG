@@ -1,83 +1,82 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 import "./LoginPage.css";
+import "./LoginValidation";
+function validation(values) {
+  let error = {};
+  const email_pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const password_pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8,}$/;
+
+  if (values.email === "") {
+    error.email = "Email sould not be empty";
+  } else if (!email_pattern.test(values.email)) {
+    error.email = "Email Didn't match";
+  } else {
+    error.email = "";
+  }
+
+  if (values.password === "") {
+    error.password = "Password sould not be empty";
+  } else if (!password_pattern.test(values.password)) {
+    error.password = "Password didn't match";
+  } else {
+    error.password = "";
+  }
+  return error;
+}
 
 const LoginPage = () => {
-  const [action, setAction] = useState("Login");
+  const [values, setValues] = useState({
+    email: "",
+    password: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleInput = (event) => {
+    setValues((prev) => ({
+      ...prev,
+      [event.target.name]: [event.target.value],
+    }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setErrors(validation(values));
+  };
 
   return (
     <div>
-      <a href="/" to="home" smooth={true} duration={500} className="loginhome">
-        Call App
-      </a>
+      <Navbar />
       <div className="container">
-        <div className="header">
-          <div className="logintitle">{action}</div>
-          <div className="underline"></div>
-        </div>
-        <div className="inputs">
-          <div className="inputone">
-            {action === "Login" ? (
-              <div></div>
-            ) : (
-              <div className="input">
-                <input type="text" placeholder="First Name" />
-              </div>
-            )}
-            {action === "Login" ? (
-              <div></div>
-            ) : (
-              <div className="input">
-                <input type="text" placeholder="Last Name" />
-              </div>
-            )}
+        <form action="" onSubmit={handleSubmit}>
+          <div className="headertitle">
+            <div className="logintitle">Log In</div>
+            <div className="underline"></div>
           </div>
-          <div className="inputtwo">
-            <div className="input">
-              <input type="email" placeholder="Email address" />
-            </div>
-            {action === "Login" ? (
-              <div></div>
-            ) : (
-              <div className="input">
-                <input type="date" placeholder="Bith date" />
-              </div>
-            )}
-          </div>
-          <div className="inputthree">
-            <div className="input">
-              <input type="password" placeholder="Password" />
-            </div>
-            {action === "Login" ? (
-              <div></div>
-            ) : (
-              <div className="input">
-                <input type="password" placeholder="Re-enter Password" />
-              </div>
-            )}
-          </div>
-        </div>
-        {action === "Sign Up" ? (
-          <div></div>
-        ) : (
-          <div className="forgot-password">Forgot password?</div>
-        )}
-        <div className="submit-container">
-          <div
-            className={action === "Login" ? "submit gray" : "submit"}
-            onClick={() => {
-              setAction("Sign Up");
-            }}>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            name="email"
+            onChange={handleInput}
+          />
+          {errors.email && <span> {errors.email} </span>}
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            onChange={handleInput}
+          />
+          {errors.password && <span> {errors.password} </span>}
+          <Link to="/ProfilePage" type="submit" className="buttonlogin">
+            Log In
+          </Link>
+          <Link to="/SignupPage" className="buttonsignup">
             Sign Up
-          </div>
-          <div
-            className={action === "Sign Up" ? "submit gray" : "submit"}
-            onClick={() => {
-              setAction("Login");
-            }}>
-            Login
-          </div>
-        </div>
+          </Link>
+        </form>
       </div>
     </div>
   );
